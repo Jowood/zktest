@@ -32,6 +32,20 @@
             <artifactId>zookeeper</artifactId>
             <version>3.4.6</version>
         </dependency>
+
+        <!--zkclient-->
+        <dependency>
+            <groupId>com.github.sgroschupf</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <properties>

@@ -19,7 +19,7 @@ public class ZooKeeperHello {
 
         byte[] b = zk.getData(node, false, stat);
         System.out.println("test:"+new String(b));
-        //zk.delete(node, -1);
+        zk.delete(node, -1);
         //b = zk.getData(node, false, stat);
         //System.out.println("test:"+new String(b));
         // 获取节点的值
