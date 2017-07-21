@@ -1,0 +1,66 @@
+package com.iss.mis.sbs.zk.app.config;
+
+import java.io.Serializable;
+
+/**
+ * Created by yufei on 2017/7/19.
+ */
+public class FtpConfig implements Serializable {
+
+
+    private int port;               //端口号
+
+    private String host;            //ftp主机名或IP
+
+    private String user;            //连接用户名
+
+    private String password;        //连接密码
+
+    public FtpConfig() {
+
+    }
+
+    public FtpConfig(int port, String host, String user, String password) {
+        this.host = host;
+        this.port = port;
+        this.user = user;
+        this.password = password;
+
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
+    }
+
+    public String getHost() {
+        return host;
+    }
+
+    public void setHost(String host) {
+        this.host = host;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String toString() {
+        return user + "/" + password + "@" + host + ":" + port;
+    }
+}
